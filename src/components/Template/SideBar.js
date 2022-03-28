@@ -24,7 +24,7 @@ const SideBar = () => (
       </p>
       <ul className="actions">
         <li>
-          {!window.location.pathname.includes('/resume') ? <Link to="/resume" className="button">Learn More</Link> : <Link to="/about" className="button">About Me</Link>}
+          <a href={`${PUBLIC_URL}/cv/cv.pdf`} className="button">Download Resume</a>
         </li>
       </ul>
     </section>
